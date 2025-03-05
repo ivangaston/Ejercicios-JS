@@ -88,34 +88,51 @@ Fecha de entrega: 10/03/25 */
 
 
 //9)
-let num1 = Number(prompt("Primer numero:"));
-let num2 = Number(prompt("Segundo numero:"));
-let resultado = 0;
-let operacion = prompt("Ingresa una operacion (+, -, *, /):");
+// let num1 = Number(prompt("Primer numero:"));
+// let num2 = Number(prompt("Segundo numero:"));
+// let resultado = 0;
+// let operacion = prompt("Ingresa una operacion (+, -, *, /):");
 
-if (!isNaN(num1) && !isNaN(num2)) {
+// if (!isNaN(num1) && !isNaN(num2)) {
 
-  if (operacion === "+") {
-    resultado = num1 + num2;
-  } else if (operacion === "-") {
-    resultado = num1 - num2;
-  } else if (operacion === "*") {
-    resultado = num1 * num2;
-  } else if (operacion === "/") {
-    if (num2 !== 0) {
-      resultado = num1 / num2;
-    } else {
-      alert("No se puede dividir por 0.");
-      resultado = null;
-    }
-  } else {
-    alert("Error, usa +, -, * o /.");
-    resultado = null;
-  }
+//   if (operacion === "+") {
+//     resultado = num1 + num2;
+//   } else if (operacion === "-") {
+//     resultado = num1 - num2;
+//   } else if (operacion === "*") {
+//     resultado = num1 * num2;
+//   } else if (operacion === "/") {
+//     if (num2 !== 0) {
+//       resultado = num1 / num2;
+//     } else {
+//       alert("No se puede dividir por 0.");
+//       resultado = null;
+//     }
+//   } else {
+//     alert("Error, usa +, -, * o /.");
+//     resultado = null;
+//   }
 
-  if (resultado !== null) {
-    alert(`El resultado de ${num1} ${operacion} ${num2} es: ${resultado}`);
-  }
-} else {
-  alert("Por favor, ingresa numeros unicamente.");
-}
+//   if (resultado !== null) {
+//     alert(`El resultado de ${num1} ${operacion} ${num2} es: ${resultado}`);
+//   }
+// } else {
+//   alert("Por favor, ingresa numeros unicamente.");
+// }
+
+//10)
+// let vehiculo = {
+//   marca: 'bwm',
+//   color: 'negro',
+//   cambio: ['manual', 'automatico'],
+//   velocidadTop: 216,
+//   combustible: 'gasolina',
+//   androidAuto: true
+// };
+
+// console.log(vehiculo);
+// document.write(`Uno de los vehiculos top de este año es el ${vehiculo.marca} que viene en dos versiones: ${vehiculo.cambio[1]} y ${vehiculo.cambio[0]}, tiene una potencia maxima de ${vehiculo.velocidadTop}`)
+
+//11)
+// let listaCompras = ['pan','carne','leche','gaseosa','fideos','latas','alcohol'];
+// listaCompras.forEach((producto) => console.log(producto));
