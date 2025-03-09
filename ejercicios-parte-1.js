@@ -6,12 +6,12 @@ Fecha de entrega: 10/03/25 */
 // console.log(`El area de tu rectangulo es de ${baseXAltura}`);
 
 
-//2)
+// 2)
 // let nombreUsuario = prompt('Hola usuario!, Escribe tu nombre');
 // document.write(`¡Bienvenido al Bootcamp, ${nombreUsuario} !`);
 
 
-//3)
+// 3)
 // let numeroUsuario = prompt('Escribe un numero y te dire si es par o impar');
 // let numero = parseInt(numeroUsuario);
 
@@ -26,7 +26,7 @@ Fecha de entrega: 10/03/25 */
 // }
 
 
-//4)
+// 4)
 // let colorFav = 'negro';
 // let comidaFav = 'pizza';
 // let lugarFav = 'Argentina';
@@ -36,7 +36,7 @@ Fecha de entrega: 10/03/25 */
 // document.write(textoCompleto);
 
 
-//5)
+// 5)
 // let numeroUno = Number(prompt('Ingrese el primer numero'));
 // let numeroDos = Number(prompt('Ahora el segundo'));
 // let numeroTres = Number(prompt('Ahora el tercero'));
@@ -49,7 +49,7 @@ Fecha de entrega: 10/03/25 */
 // }
 
 
-//6)
+// 6)
 // let radio = Number(prompt("Ingresa el radio del circulo:"));
 
 // if (!isNaN(radio) && radio > 0) {
@@ -60,7 +60,7 @@ Fecha de entrega: 10/03/25 */
 // }
 
 
-//7)
+// 7)
 // let minutos = Number(prompt("Ingresa un numero de minutos:"));
 
 // if (!isNaN(minutos) && minutos >= 0) {
@@ -73,7 +73,7 @@ Fecha de entrega: 10/03/25 */
 // }
 
 
-//8)
+// 8)
 // let precioDolares = Number(prompt("Ingresa el precio del producto en dolares:"));
 
 // if (!isNaN(precioDolares) && precioDolares > 0) {
@@ -87,7 +87,7 @@ Fecha de entrega: 10/03/25 */
 // }
 
 
-//9)
+// 9)
 // let num1 = Number(prompt("Primer numero:"));
 // let num2 = Number(prompt("Segundo numero:"));
 // let resultado = 0;
@@ -120,7 +120,7 @@ Fecha de entrega: 10/03/25 */
 //   alert("Por favor, ingresa numeros unicamente.");
 // }
 
-//10)
+// 10)
 // let vehiculo = {
 //   marca: 'bwm',
 //   color: 'negro',
@@ -133,6 +133,16 @@ Fecha de entrega: 10/03/25 */
 // console.log(vehiculo);
 // document.write(`Uno de los vehiculos top de este año es el ${vehiculo.marca} que viene en dos versiones: ${vehiculo.cambio[1]} y ${vehiculo.cambio[0]}, tiene una potencia maxima de ${vehiculo.velocidadTop}`)
 
-//11)
-// let listaCompras = ['pan','carne','leche','gaseosa','fideos','latas','alcohol'];
+// 11)
+// let listaCompras = ['pan', 'carne', 'leche', 'gaseosa', 'fideos', 'latas', 'alcohol'];
 // listaCompras.forEach((producto) => console.log(producto));
+
+// 12)
+
+// let listaMoviePendientes = ["Matrix", "Batman", "Juego del Miedo", "Viernes 13"];
+// let usuarioMoviePush = prompt('Agrega una Pelicula a la Lista de pendientes');
+
+// listaMoviePendientes.push(usuarioMoviePush);
+// listaMoviePendientes.splice(2, 1, "Spiderman");
+
+// console.log(listaMoviePendientes);
