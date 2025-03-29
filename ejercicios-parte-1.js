@@ -146,3 +146,34 @@ Fecha de entrega: 10/03/25 */
 // listaMoviePendientes.splice(2, 1, "Spiderman");
 
 // console.log(listaMoviePendientes);
+
+//RELOJ Y FECHA 
+let horasHtml = document.getElementById('horas');
+let minutosHtml = document.getElementById('minutos');
+let segundosHtml = document.getElementById('segundos');
+let fechaActual = document.getElementById('fechaActual');
+
+function ceroDelante(numero) {
+  return numero < 10 ? '0' + numero : numero;
+}
+
+function actualizarReloj() {
+  let tiempo = new Date();
+  let hora = ceroDelante(tiempo.getHours());
+  let minuto = ceroDelante(tiempo.getMinutes());
+  let segundo = ceroDelante(tiempo.getSeconds());
+  
+  horasHtml.innerText = hora;
+  minutosHtml.innerText = minuto;
+  segundosHtml.innerText = segundo;
+
+  let dia = ceroDelante(tiempo.getDate());
+  let mes = ceroDelante(tiempo.getMonth() + 1);
+  let año = tiempo.getFullYear();
+  
+  fechaActual.innerText = ` Hoy es ${dia} del ${mes} del ${año}`;
+}
+
+setInterval(actualizarReloj, 1000);
+/******************************************************************/
+
