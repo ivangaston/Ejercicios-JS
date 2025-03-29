@@ -147,7 +147,10 @@ Fecha de entrega: 10/03/25 */
 
 // console.log(listaMoviePendientes);
 
-//RELOJ Y FECHA 
+
+/* TIEMPO */
+
+//RELOJ 
 let horasHtml = document.getElementById('horas');
 let minutosHtml = document.getElementById('minutos');
 let segundosHtml = document.getElementById('segundos');
@@ -162,18 +165,39 @@ function actualizarReloj() {
   let hora = ceroDelante(tiempo.getHours());
   let minuto = ceroDelante(tiempo.getMinutes());
   let segundo = ceroDelante(tiempo.getSeconds());
-  
+
   horasHtml.innerText = hora;
   minutosHtml.innerText = minuto;
   segundosHtml.innerText = segundo;
 
+  //FECHA
+  let diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+  let meses = [
+    'Enero',
+    'Febrero',
+    'Marzo',
+    'Abril',
+    'Mayo',
+    'Junio',
+    'Julio',
+    'Agosto',
+    'Septiembre',
+    'Octubre',
+    'Noviembre',
+    'Diciembre'
+  ];
+
+  let diaSemana = diasSemana[tiempo.getDay()];
   let dia = ceroDelante(tiempo.getDate());
-  let mes = ceroDelante(tiempo.getMonth() + 1);
+  let mes = meses[tiempo.getMonth()];
   let año = tiempo.getFullYear();
-  
-  fechaActual.innerText = ` Hoy es ${dia} del ${mes} del ${año}`;
+
+  fechaActual.innerText = `Hoy es ${diaSemana} ${dia} de ${mes} del ${año}`;
 }
 
 setInterval(actualizarReloj, 1000);
+
+actualizarReloj();
+
 /******************************************************************/
 
