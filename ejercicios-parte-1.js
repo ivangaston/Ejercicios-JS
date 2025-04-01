@@ -148,56 +148,58 @@ Fecha de entrega: 10/03/25 */
 // console.log(listaMoviePendientes);
 
 
-/* TIEMPO */
+
+
+                          /* TIEMPO */
 
 //RELOJ 
-let horasHtml = document.getElementById('horas');
-let minutosHtml = document.getElementById('minutos');
-let segundosHtml = document.getElementById('segundos');
-let fechaActual = document.getElementById('fechaActual');
+// let horasHtml = document.getElementById('horas');
+// let minutosHtml = document.getElementById('minutos');
+// let segundosHtml = document.getElementById('segundos');
+// let fechaActual = document.getElementById('fechaActual');
 
-function ceroDelante(numero) {
-  return numero < 10 ? '0' + numero : numero;
-}
+// function ceroDelante(numero) {
+//   return numero < 10 ? '0' + numero : numero;
+// }
 
-function actualizarReloj() {
-  let tiempo = new Date();
-  let hora = ceroDelante(tiempo.getHours());
-  let minuto = ceroDelante(tiempo.getMinutes());
-  let segundo = ceroDelante(tiempo.getSeconds());
+// function actualizarReloj() {
+//   let tiempo = new Date();
+//   let hora = ceroDelante(tiempo.getHours());
+//   let minuto = ceroDelante(tiempo.getMinutes());
+//   let segundo = ceroDelante(tiempo.getSeconds());
 
-  horasHtml.innerText = hora;
-  minutosHtml.innerText = minuto;
-  segundosHtml.innerText = segundo;
+//   horasHtml.innerText = hora;
+//   minutosHtml.innerText = minuto;
+//   segundosHtml.innerText = segundo;
 
-  //FECHA
-  let diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
-  let meses = [
-    'Enero',
-    'Febrero',
-    'Marzo',
-    'Abril',
-    'Mayo',
-    'Junio',
-    'Julio',
-    'Agosto',
-    'Septiembre',
-    'Octubre',
-    'Noviembre',
-    'Diciembre'
-  ];
+//   //FECHA
+//   let diasSemana = ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'];
+//   let meses = [
+//     'Enero',
+//     'Febrero',
+//     'Marzo',
+//     'Abril',
+//     'Mayo',
+//     'Junio',
+//     'Julio',
+//     'Agosto',
+//     'Septiembre',
+//     'Octubre',
+//     'Noviembre',
+//     'Diciembre'
+//   ];
 
-  let diaSemana = diasSemana[tiempo.getDay()];
-  let dia = ceroDelante(tiempo.getDate());
-  let mes = meses[tiempo.getMonth()];
-  let año = tiempo.getFullYear();
+//   let diaSemana = diasSemana[tiempo.getDay()];
+//   let dia = ceroDelante(tiempo.getDate());
+//   let mes = meses[tiempo.getMonth()];
+//   let año = tiempo.getFullYear();
 
-  fechaActual.innerText = `Hoy es ${diaSemana} ${dia} de ${mes} del ${año}`;
-}
+//   fechaActual.innerText = `Hoy es ${diaSemana} ${dia} de ${mes} del ${año}`;
+// }
 
-setInterval(actualizarReloj, 1000);
+// setInterval(actualizarReloj, 1000);
 
-actualizarReloj();
+// actualizarReloj();
 
 /******************************************************************/
 
