@@ -1,4 +1,4 @@
-const fechaNacimiento = prompt("Tu fecha de nacimiento (en formato YYYY-MM-DD)");
+const fechaNacimiento = prompt("Tu fecha de nacimiento en formato YYYY-MM-DD");
 const fechaNacimientoDate = new Date(fechaNacimiento);
 const fechaActual = new Date();
 
